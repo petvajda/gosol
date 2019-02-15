@@ -6,11 +6,11 @@ import (
 
 func TestNoteGeneration(t *testing.T) {
 	if len(flatNotes) != 7 {
-		t.Errorf("Expected flatnotes length of 7, but got %v", len(flatNotes))
+		t.Errorf("Expected flatNotes length of 7, but got %v", len(flatNotes))
 	}
 
 	if len(sharpNotes) != 7 {
-		t.Errorf("Expected flatnotes length of 7, but got %v", len(sharpNotes))
+		t.Errorf("Expected sharpNotes length of 7, but got %v", len(sharpNotes))
 	}
 	flats := []string{"B", "E", "A", "D", "G", "C", "F"}
 
@@ -22,7 +22,7 @@ func TestNoteGeneration(t *testing.T) {
 	sharps := []string{"F", "C", "G", "D", "A", "E", "B"}
 	for i := range sharps {
 		if sharpNotes[i] != sharps[i] {
-			t.Errorf("Expected flatnote %v, but got %v", sharps[i], sharpNotes[i])
+			t.Errorf("Expected sharpnote %v, but got %v", sharps[i], sharpNotes[i])
 		}
 	}
 
